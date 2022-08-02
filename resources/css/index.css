@@ -1,10 +1,56 @@
+/* Universal stuff */
 * {
     font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
 }
 
+/* Navigation area */
+nav {
+    background-color: lightgrey;
+    position: absolute;
+    border-radius: 10px;
+}
+
+nav a {
+    font-family: "Covered By Your Grace", sans-serif;
+    color:darkslategrey;
+    text-decoration: none;
+    font-size: 1.25em;
+    padding-right: 20px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a:hover {
+    color: darkgrey;
+}
+
+/* Header */
+header a {
+    font-family: "Covered By Your Grace", sans-serif;
+    color:darkslategrey;
+}
+
+header h1 {
+    font-size: 4em;
+    font-family: "Covered By Your Grace", sans-serif;
+    color:darkslategrey;
+}
+
+header a:hover {
+    color:grey;
+}
+
+/* Body */
+
 h1,
-p {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Covered By Your Grace", sans-serif;
     color:darkslategrey;
 }
@@ -13,10 +59,84 @@ h1 {
     font-size: 3em;
 }
 
+h2 {
+    font-size: 2.75em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.75em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+.montserrat {
+    font-family: Montserrat;
+}
+
 p {
     font-size: 1.5em;
 }
 
 .GIF {
     border-radius: 5%;
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+/*div box */
+.divbox {
+    border: 1px solid grey;
+    border-radius: 20px;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.divbox h2 {
+    width: 100%;
+}
+
+/* color boxes */
+.color-box {
+    flex-basis: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 15px;
+    flex-shrink: 0;
+}
+
+.color-box h2, .color-box p {
+    color: white;
+}
+
+.lightgrey {
+    background-color: lightgrey;
+}
+
+.darkslategrey {
+    background-color: darkslategrey;
+}
+
+.grey {
+    background-color: grey;
 }

@@ -100,28 +100,74 @@ p {
     display: flex;
     justify-content: center;
     margin-bottom: 1%;
+    flex-direction: column;
 }
 /*div box */
 .divbox {
-    border: 1px solid grey;
+    border: 1px solid white;
     border-radius: 20px;
     width: 50%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.divbox img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    opacity: 0.5;
 }
 
 .divbox h2 {
     width: 100%;
 }
 
+.flexgrid {
+    
+}
+
+.flexgrid a {
+    
+}
+
+/* portfolio thumbnail */
+.portfolioThumbnail {
+    min-width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    display: inline-block;
+    margin: 5px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: 50%;
+    border: 1px solid darkslategray;
+}
+
+.portfolioThumbnail h2, .portfolioThumbnail p {
+    color: darkslategray;
+}
+/* portfolio thumbnail images */
+#WhompsOnWheels:hover{
+    background-image: url("../../Portfolio/WhompsOnWheels/thumbnail.png");
+}
+#TheTeaCozy:hover {
+    background-image: url("../../Portfolio/TeaCozy/resources/thumbnail.jpg");
+}
+#SteampunkGoggles:hover {
+    background-image: url("../../Portfolio/Steampunk/Hat+Goggles.png");
+}
+
 /* color boxes */
 .color-box {
-    flex-basis: 200px;
+    min-width: 200px;
     height: 200px;
-    border-radius: 20px;
+    border-radius: 25px;
     display: inline-block;
-    margin: 15px;
+    margin: 5px;
     flex-shrink: 0;
 }
 

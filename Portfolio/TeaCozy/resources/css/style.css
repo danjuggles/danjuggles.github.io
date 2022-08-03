@@ -1,0 +1,134 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
+/* Header */
+header {
+    position: sticky;
+    width: 100%;
+    top: 0px;
+    z-index: 9999;
+}
+
+.header {
+    border-bottom: 1px solid seashell;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 50px;
+    margin-left: 10px;
+}
+
+/* nav */
+nav {
+
+}
+
+nav a {
+    padding-left: 20px;
+}
+
+/* body */
+body {
+}
+
+/* container */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-container {
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+}
+
+.container-title {
+    flex-wrap: wrap;
+}
+
+/* hero */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    height: 700px;
+    width: 1200px;
+    object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+}
+
+/* gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    padding: 0px 10px;
+}
+
+.gallery-item img {
+    height: 200px;
+    width: 300px;
+}
+
+/* Locations */
+.locations {
+    background-image: url(../media/img-locations-background.jpg);
+    height: 500px;
+    width: 1200px;
+    display: flex;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.locations h2 {
+    background-color: transparent;
+}
+
+.location-grid {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.location-box {
+    opacity: 1;
+    margin: 10px 20px;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* footer */
+.footer .copyright {
+    text-align: left;
+}

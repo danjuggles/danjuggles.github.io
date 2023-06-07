@@ -5,7 +5,7 @@
 }
 
 /* Navigation area */
-nav {
+/* nav {
     background-color: lightgrey;
     position: absolute;
     border-radius: 10px;
@@ -25,9 +25,54 @@ nav li {
 
 nav a:hover {
     color: darkgrey;
+} */
+nav {
+    background-color: lightgrey;
+    width: 100%;
+    height: 50px; /* you can adjust as per your need */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 0;
+    display: flex;
+    justify-content: space-between; /* to spread items along the line */
+    padding: 0 20px; /* horizontal padding */
+    align-items: center; /* to center items vertically */
+    box-sizing: border-box; /* to include padding in total width */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* to make the list items line up horizontally */
+}
+
+nav li {
+    margin-right: 20px; /* space between the menu items */
+}
+
+nav li:last-child {
+    margin-right: 0; /* removes the extra space on the far right */
+}
+
+nav a {
+    font-family: "Covered By Your Grace", sans-serif;
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 1.25em;
+}
+
+nav a:hover {
+    color: darkgrey;
 }
 
 /* Header */
+header {
+    margin-top: 50px; /* Adjust this value to fit your actual navbar height */
+}
+
 header a {
     font-family: "Covered By Your Grace", sans-serif;
     color:darkslategrey;
@@ -53,6 +98,7 @@ h5,
 h6 {
     font-family: "Covered By Your Grace", sans-serif;
     color:darkslategrey;
+    margin: 0% 0% 1%;
 }
 
 h1 {
@@ -88,12 +134,22 @@ h6 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
+    margin: 1% 0% 1%;
 }
 
 .GIF {
     border-radius: 5%;
 }
+
+img {
+    border-radius: 100%;
+    width: 25vw;
+}
+
+/* section {
+    width: 50vw;
+} */
 
 .container {
     align-items: center;

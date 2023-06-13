@@ -90,6 +90,15 @@ header a:hover {
 
 /* Body */
 
+ul {
+    list-style-position: inside;
+    padding-left: 0;
+  }
+  
+  li {
+    text-align: left;
+  }
+  
 h1,
 h2,
 h3,

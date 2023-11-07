@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link href="../../resources/css/index.css" type="text/css" rel="stylesheet">
+    <link href="../blog.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../aboutme.html">About Me</a></li>
+            <li><a href="../../portfolio.html">Portfolio</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+    <!-- Introduction -->
+        <h1>Blog</a></h1>
+    </header>
+    <main>
+        <h1>Bridging Music and Light</h1>
+        <h2>A MIDI-Controlled LED Piano Project</h2>
+
+        <img src="placeholder1.jpg" alt="LED Piano">
+        <p><i>Image: The LED piano in action.</i></p>
+
+        <p>Combining music with visual elements creates an immersive experience that is more than just auditory. In this vein, my latest project aims to connect an LED strip to a piano, controlled by MIDI signals. This initiative allows the audience not only to listen but also to visually engage with the music.</p>
+        
+        <h2>The System</h2>
+        <p>At the core of the system, we have 144 LEDs mapped onto the 88 keys of a piano. The correlation is straightforward: each white key relates to 2 LEDs, and each black key corresponds to 1 LED. Driving this LED ensemble is the NodeMCU microcontroller, a compact device known for its versatility and power.</p>
+        
+        <img src="placeholder2.jpg" alt="NodeMCU Microcontroller">
+        <p><i>Image: The NodeMCU microcontroller that drives the LED ensemble.</i></p>
+
+        <h2>Interactive Element</h2>
+        <p>The NodeMCU also hosts a webpage, creating an interactive element that is integral to the project. This interface, designed with user-friendliness in mind for usage on phones, allows audience members to tweak the visual output in real-time. From choosing among different effects to changing the colour, speed, and brightness, users can actively participate in the performance.</p>
+        
+        <img src="placeholder3.jpg" alt="Interactive Webpage Interface">
+        <p><i>Image: The interactive webpage interface hosted by NodeMCU.</i></p>
+
+        <h2>Development and Tools</h2>
+        <p>The impetus for this project was a desire to augment the performances of a pianist friend with an additional visual dimension. The journey required the utilization of various tools: A MIDI editor on the PC proved invaluable for testing, while PlatformIO facilitated source code management. Libraries such as FastLED, MIDI, and ESP8266WiFi formed the building blocks of the software architecture.</p>
+        
+        <img src="placeholder4.jpg" alt="MIDI Editor and PlatformIO">
+        <p><i>Image: The MIDI editor and PlatformIO used for development.</i></p>
+
+        <h2>MIDI Signal Processing</h2>
+        <p>Processing the MIDI signals is at the heart of the operation. The system reads incoming MIDI data, extracting two key pieces of information: the pitch, indicating which key is pressed, and the velocity, showing the intensity of the press. The pitch maps to a specific position in an array. Based on the selected effect, this information then triggers an update in the LED array. The brightness of each LED varies with the velocity, creating a dynamic light show that mirrors the musical performance.</p>
+        
+        <img src="placeholder5.jpg" alt="MIDI Signal Processing">
+        <p><i>Image: MIDI signals being processed into LED array updates.</i></p>
+
+        <h2>Challenges and Future Plans</h2>
+        <p>Overcoming challenges and solving problems is part and parcel of the prototyping process. Ensuring that the processing speed was adequate to maintain the fluidity of effects, even with rapid note changes, was a significant hurdle. Through determined troubleshooting, the prototype has evolved to its current state and is ready for its first real-world test. Looking ahead, my plan involves refining the system by introducing more effects and expanding the scope of audience-performer interaction. I also intend to design a custom PCB and an acrylic case. The transparent case would provide a glimpse into the electronics that power this immersive experience.</p>
+        
+        <img src="placeholder6.jpg" alt="Future Plans">
+        <p><i>Image: Concept sketches of future plans including custom PCB and acrylic case.</i></p>
+
+        <h2>Open Source Ethos</h2>
+        <p>While I have no plans to commercialise this project, I strongly believe in the spirit of collaboration and open-source ethos. I intend to share this project broadly, hoping that it may serve as a source of inspiration to others.</p>
+        
+        <h2>Conclusion</h2>
+        <p>The MIDI-controlled LED piano project adds an engaging visual element to the auditory experience of a musical performance. The early feedback has been promising, and I eagerly anticipate its debut before a live audience.</p>
+
+        <img src="placeholder8.jpg" alt="Audience Reaction">
+        <p><i>Image: An excited audience experiencing the LED piano project.</i></p>
+
+      </main>
+</body>
+ 
+</html>

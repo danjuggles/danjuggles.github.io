@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+#portfolio {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.project {
+    position: relative;
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.project a {
+    display: block;
+    text-decoration: none;
+}
+
+.project .project-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    color: white;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Covered By Your Grace", sans-serif;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
